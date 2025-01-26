@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "bubsy-grid-planner",
-    "slug": "ig-feed-planner",
+    "slug": "bubsy-grid-planner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,6 +9,7 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
+      "buildNumber": "3",
       "supportsTablet": true,
       "bundleIdentifier": "com.jakegrella.gridplanner",
       "splash": {
@@ -50,8 +51,11 @@
       "typedRoutes": true
     },
     "extra": {
+      "router": {
+        "origin": false
+      },
       "eas": {
-        "projectId": "d2c53e3f-200d-4261-bd2a-b5831af6d130"
+        "projectId": "f4841410-47af-4108-bf87-86a1ef53f216"
       }
     }
   }
