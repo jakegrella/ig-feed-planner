@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ig-feed-planner",
-    "slug": "ig-feed-planner",
+    "name": "bubsy-grid-planner",
+    "slug": "bubsy-grid-planner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,7 +10,14 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jakegrella.igfeedplanner"
+      "bundleIdentifier": "com.jakegrella.gridplanner",
+      "splash": {
+        "backgroundColor": "#ffffff"
+      },
+      "icon": {
+        "dark": "./assets/images/icon-dark.png",
+        "light": "./assets/images/icon-light.png"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -31,9 +38,6 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
       ],

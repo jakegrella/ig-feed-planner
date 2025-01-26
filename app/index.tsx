@@ -1,4 +1,4 @@
-import { Image, ScrollView, View } from "react-native";
+import { Image, ScrollView, useColorScheme, View } from "react-native";
 import Icon from "@expo/vector-icons/Ionicons";
 import * as ImagePicker from "expo-image-picker";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -7,6 +7,8 @@ import DraggableGrid from "react-native-draggable-grid";
 import * as Crypto from "expo-crypto";
 
 export default function Index() {
+  const colorScheme = useColorScheme();
+
   type ImageData = {
     key: string;
     uri: string;
@@ -58,7 +60,7 @@ export default function Index() {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#FFFFFF",
+        backgroundColor: colorScheme === "light" ? "#ffffff" : "#000000",
       }}
     >
       <ScrollView ref={scrollViewRef}>
@@ -72,7 +74,11 @@ export default function Index() {
                 style={{
                   borderWidth: item.key === selectedImage?.key ? 4 : 1,
                   borderColor:
-                    item.key === selectedImage?.key ? "#F2E94E" : "#ffffff",
+                    item.key === selectedImage?.key
+                      ? "#f2e94e"
+                      : colorScheme === "light"
+                      ? "#ffffff"
+                      : "#000000",
                   minHeight: "100%",
                   minWidth: "100%",
                 }}
@@ -81,7 +87,7 @@ export default function Index() {
                   <Icon
                     name="pin"
                     size={32}
-                    color="#FFFFFF"
+                    color="#ffffff"
                     style={{
                       position: "absolute",
                       top: 6,
@@ -122,7 +128,7 @@ export default function Index() {
       <View
         style={{
           height: 90,
-          backgroundColor: "#FFFFFF",
+          backgroundColor: colorScheme === "light" ? "#ffffff" : "#000000",
           boxShadow: "0 -1px 4px rgba(0, 0, 0, 0.05)",
           padding: 10,
           display: "flex",
@@ -136,7 +142,7 @@ export default function Index() {
             <Icon
               name="trash-outline"
               size={32}
-              color="#000000"
+              color={colorScheme === "light" ? "#000000" : "#ffffff"}
               onPress={async () => {
                 try {
                   const filteredImageData = imageData.filter(
@@ -157,7 +163,11 @@ export default function Index() {
               name={selectedImage.pinned ? "pin" : "pin-outline"}
               size={32}
               color={
-                !selectedImage.pinned && pinCount === 3 ? "#B0B3BF" : "#000000"
+                !selectedImage.pinned && pinCount === 3
+                  ? "#b0b3bf"
+                  : colorScheme === "light"
+                  ? "#000000"
+                  : "#ffffff"
               }
               disabled={!selectedImage.pinned && pinCount === 3}
               onPress={async () => {
@@ -191,7 +201,7 @@ export default function Index() {
         <Icon
           name="add"
           size={32}
-          color="#000000"
+          color={colorScheme === "light" ? "#000000" : "#ffffff"}
           onPress={async () => {
             try {
               // select images

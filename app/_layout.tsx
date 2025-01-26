@@ -1,9 +1,10 @@
 import { Stack } from "expo-router";
-import { View } from "react-native";
+import { View, useColorScheme } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function RootLayout() {
+  const colorScheme = useColorScheme();
+
   return (
     <GestureHandlerRootView>
       <Stack>
@@ -14,7 +15,8 @@ export default function RootLayout() {
               <View
                 style={{
                   height: 59,
-                  backgroundColor: "#FFFFFF",
+                  backgroundColor:
+                    colorScheme === "light" ? "#ffffff" : "#000000",
                   boxShadow: "0 1px 4px rgba(0, 0, 0, 0.05)",
                 }}
               />

@@ -1,1 +1,1 @@
-# ig-feed-planner
+# bubsy-grid-planner
