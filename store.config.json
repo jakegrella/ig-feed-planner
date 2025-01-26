@@ -1,0 +1,52 @@
+{
+  "configVersion": 0,
+  "apple": {
+    "categories": [
+        "GRAPHICS_AND_DESIGN",
+        "PHOTO_AND_VIDEO"
+    ],
+    "info": {
+      "en-US": {
+        "title": "Bubsy - Grid Planner",
+        "subtitle": "The simplest IG grid planner",
+        "promoText": "The simplest IG grid planner",
+        "description": "Bubsy - Grid Planner\nThe Simplest Way to Plan Your Instagram Grid\n\nBubsy - Grid Planner is a no-frills tool designed to help you effortlessly plan your Instagram profile grid. Unlike other apps, Bubsy keeps things lightweight, secure, and refreshingly simple.\n\nKey Features:\n- Simplicity at Its Core: A clean, intuitive interface that focuses on what matters—your grid.\n- Privacy First: Photos stay linked to your device’s Photos app. Nothing is stored externally.\n- No Account Required: No need to log in with Instagram—or at all. Your content stays with you.\n\nWhether you’re a casual Instagram user or a social media pro, Bubsy - Grid Planner is the easiest way to visualize and perfect your posts before you publish.\n\nDownload now and experience simplicity in grid planning!",
+        "keywords": ["instagram", "grid", "grid planner"],
+        "marketingUrl": "https://jakegrella.com/tools/bubsy/grid-planner",
+        "supportUrl": "https://jakegrella.com/contact",
+        "privacyPolicyUrl": "https://jakegrella.com/privacy",
+        "releaseNotes": "First release of application. Please email me at jake@jakegrella.com to suggest any features."
+      }
+    },
+    "advisory": {
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": "NONE",
+      "gamblingSimulated": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "matureOrSuggestiveThemes": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealistic": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "unrestrictedWebAccess": false,
+      "gambling": false,
+      "kidsAgeBand": null,
+      "ageRatingOverride": "NONE",
+      "koreaAgeRatingOverride": "NONE",
+      "lootBox": false
+    },
+    "release": {
+      "automaticRelease": true
+    },
+    "review": {
+      "firstName": "Jake",
+      "lastName": "Grella",
+      "email": "jake@jakegrella.com",
+      "phone": "+1 708 205 1007",
+      "demoRequired": false
+    }
+  }
+}
