@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "bubsy-grid-planner",
+    "name": "Bubsy — Grid Planner",
     "slug": "bubsy-grid-planner",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",

@@ -11,17 +11,20 @@ export default function RootLayout() {
         <Stack.Screen
           name="index"
           options={{
-            header: () => (
-              <View
-                style={{
-                  height: 59,
-                  backgroundColor:
-                    colorScheme === "light" ? "#ffffff" : "#000000",
-                  boxShadow: "0 1px 4px rgba(0, 0, 0, 0.05)",
-                }}
-              />
-            ),
+            headerShown: false,
           }}
+          // options={{
+          //   header: () => (
+          //     <View
+          //       style={{
+          //         height: 59,
+          //         backgroundColor:
+          //           colorScheme === "light" ? "#ffffff" : "#000000",
+          //         boxShadow: "0 1px 4px rgba(0, 0, 0, 0.05)",
+          //       }}
+          //     />
+          //   ),
+          // }}
         />
       </Stack>
     </GestureHandlerRootView>
